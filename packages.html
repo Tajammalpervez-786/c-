@@ -1,0 +1,288 @@
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Link -->
+
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+</head>
+<body>
+    
+
+
+
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" id="logo"><span>T</span>ravel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="book.html">Book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="packages.html">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallary.html">Gallary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+          <form class="d-flex me-3">
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="Search">
+              <span class="input-group-text">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+            </div>
+          </form>
+          <div class="d-flex">
+            <button class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#signInModal">Sign In</button>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Include Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Sign In Modal -->
+    <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="signInEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="signInEmail" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="signInPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="signInPassword" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Sign In</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="signUpName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="signUpName" placeholder="Your Name">
+              </div>
+              <div class="mb-3">
+                <label for="signUpEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="signUpEmail" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="signUpPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="signUpPassword" placeholder="Password">
+              </div>
+              <div class="mb-3">
+                <label for="signUpConfirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="signUpConfirmPassword" placeholder="Confirm Password">
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    
+    <!-- Navbar End -->
+
+<!-- Section Packages Start -->
+<section class="packages" id="packages">
+    <div class="container">
+      
+      <div class="main-txt">
+        <h1><span>P</span>ackages</h1>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <img src="./images/uk.png" alt="">
+            <div class="card-body">
+              <h3>United Kingdom</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>Price: <strong>$500</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <img src="./images/france.png" alt="">
+            <div class="card-body">
+              <h3>France</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>Price: <strong>$500</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <img src="./images/pakistan.png" alt="">
+            <div class="card-body">
+              <h3>Pakistan</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>Price: <strong>$500</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+
+      <div class="row" style="margin-top: 30px;">
+
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <img src="./images/italy.png" alt="">
+            <div class="card-body">
+              <h3>Italy</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>Price: <strong>$500</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <img src="./images/india.png" alt="">
+            <div class="card-body">
+              <h3>India</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>Price: <strong>$500</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <img src="./images/us.png" alt="">
+            <div class="card-body">
+              <h3>United States</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus!</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>Price: <strong>$500</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </section>
+  <!-- Section Packages End -->
